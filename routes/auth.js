@@ -2,7 +2,7 @@
 import express from 'express';
 import {
   register,
-  login,
+  loginUser,
   logout,
   getMe,
 } from '../controllers/authController.js';
@@ -10,7 +10,7 @@ import {
 const router = express.Router();
 
 router.post('/register', register);
-router.post('/login', login);
+router.post('/login', loginUser);
 router.post('/logout', logout);
 router.get('/me', getMe);
 
