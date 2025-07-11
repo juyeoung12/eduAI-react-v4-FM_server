@@ -23,7 +23,7 @@ import authRoutes from './routes/auth.js';
 import courseRoutes from './routes/courses.js';
 
 dotenv.config();
-~
+
 const app = express();
 const whitelist = [
   'http://localhost:5173',                        // 로컬 프론트엔드 실행 주소
