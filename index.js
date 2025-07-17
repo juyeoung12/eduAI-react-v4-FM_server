@@ -15,7 +15,7 @@ const app = express();
 // CORS 설정
 const whitelist = [
   'http://localhost:5173',
-  'https://eduai-react-v3-fm.vercel.app'
+  'https://eduai-react-client.vercel.app'
 ];
 // app.use(cors({ origin: whitelist, credentials: true }));
 
