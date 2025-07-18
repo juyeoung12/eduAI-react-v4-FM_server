@@ -43,6 +43,7 @@ export const getImages = async (req, res) => {
       type: 'upload',
       prefix: 'admin-uploads/',
       max_results: 30,
+       sort_by: 'created_at:desc', // ← 추가 옵션
     });
     res.json(result.resources); // 배열 반환
   } catch (err) {
