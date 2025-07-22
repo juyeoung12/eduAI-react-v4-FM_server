@@ -22,9 +22,11 @@ const whitelist = [
 // ✅✅✅ 추가1
 app.use(cors({
   origin: (origin, callback) => {
+    console.log('🔍 요청 origin:', origin);
     if (!origin || whitelist.includes(origin)) {
       callback(null, true);
     } else {
+      console.log('❌ 허용되지 않은 origin:', origin);
       callback(new Error('Not allowed by CORS'));
     }
   },
